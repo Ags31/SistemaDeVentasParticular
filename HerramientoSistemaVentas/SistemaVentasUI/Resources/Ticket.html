@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table.border {
+                border-collapse: collapse;
+            }
+    
+                table.border th {
+                    text-align: center;
+                    padding: 5px;
+                    border: 1px solid black;
+                }
+    
+                table.border td {
+                    text-align: center;
+                    padding: 5px;
+                    border: 1px solid black;
+                }
+        </style>
+        <title>Ticket</title>
+    </head>
+    <body style="font-size: 12px; font-family: 'Times New Roman';">
+
+        <div class="ticket" style="border: 3px solid black; width: 275px; max-width: 275px;" >
+            <img
+            style="width:80px;height:80px;display: block; margin: auto;" 
+            src="!imagen!" >
+
+            <p class="centrado" style="text-align:center; align-content: center;">
+                @nombrenegocio
+                <br>Recibo numero: @numerodocumento
+                <br>@fecharegistro
+            </p>
+
+            <table style="width:100%;font-size:12px;" class="border">
+                <thead class="border">
+                    <tr style="background-color:#CACACA">
+                        <th class="cantidad" >CANTIDAD</th>
+                        <th class="producto" >PRODUCTO</th>
+                        <th class="precio" >$$</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        @filas
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <tbody>
+                    <p class="totall" style="text-align: right ; align-content: right;">
+                        Monto Total: @montototal</p>
+                </tbody>
+            </table>
+            <p class="centrado" style="text-align:center; align-content: center;">¡GRACIAS POR SU COMPRA!
+                <br>Vuelva Pronto</p>
+        </div>
+
+    </body>
+</html>

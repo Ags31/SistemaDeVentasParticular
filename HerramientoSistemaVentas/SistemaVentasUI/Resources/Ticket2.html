@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table.border {
+                border-collapse: collapse;
+            }
+    
+                table.border th {
+                    text-align: center;
+                    padding: 5px;
+                    border: 1px solid black;
+                }
+    
+                table.border td {
+                    text-align: center;
+                    padding: 5px;
+                    border: 1px solid black;
+                }
+        </style>
+        <title>Ticket</title>
+    </head>
+    <body style="font-size: 12px; font-family: 'Times New Roman';">
+
+        <div class="ticket" style="border: 3px solid black; width: 275px; max-width: 275px;" >
+            <img
+            style="width:80px;height:80px;display: block; margin: auto;" 
+            src="!imagen!" >
+
+            <p class="centrado" style="text-align:center; align-content: center;">
+                @nombrenegocio
+                <br>@direcnegocio
+                <br>@fecharegistro
+            </p>
+
+            <table style="border-top:1px dotted black; border-collapse: collapse;">
+                <thead class="border">
+                    <tr style="background-color:#CACACA">
+                        <th class="cantidad" style="width: 80px; word-break: break-all; max-width: 80px;">CANTIDAD</th>
+                        <th class="producto" style="width: 150px; word-break: break-all; max-width: 150px;">PRODUCTO</th>
+                        <th class="precio" style="width: 45px; word-break: break-all; max-width: 45px;">$$</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        @filas
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <tbody>
+                    <p class="totall" style="text-align: right ; align-content: right;">
+                        Monto Total: @montototal</p>
+                </tbody>
+            </table>
+            <p class="centrado" style="text-align:center; align-content: center;">¡GRACIAS POR SU COMPRA!
+                <br>Fiumba</p>
+        </div>
+
+    </body>
+</html>
